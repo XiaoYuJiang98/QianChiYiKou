@@ -65,7 +65,6 @@ def reorder_df(df):
             temp_df_9,
             temp_df_10,
             temp_df_11,
-            temp_df_12,
         ], 
         axis=0
     )
