@@ -5,7 +5,8 @@ df = pandas.read_csv("https://raw.githubusercontent.com/XiaoYuJiang98/QianChiYiK
 
 streamlit.set_page_config(
     page_title="自主查询",
-    page_icon="🌟"
+    page_icon="🌟“，
+    layout="wide",
 )
 
 def init_filter(df):
@@ -102,7 +103,12 @@ ndf = query_data(
     item=None
 )
 ndf = reorder_df(ndf)
-streamlit.dataframe(ndf, width=1200, height=600)
+streamlit.dataframe(
+    ndf, 
+    width=1200, 
+    height=600,
+    use_container_width=False,
+)
 
 
 
