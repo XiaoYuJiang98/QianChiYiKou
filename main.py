@@ -42,16 +42,15 @@ def query_data(name=None, series=None, item=None):
 def reorder_df(df):
     temp_df_1 = df[df["状态"] == "完成"].copy()
     temp_df_2 = df[df["状态"] == "退补进行中"].copy()
-    temp_df_3 = df[df["状态"] == "未出荷"].copy()
-    temp_df_4 = df[df["状态"] == "出荷准备中"].copy()
-    temp_df_5 = df[df["状态"] == "到库"].copy()
+    temp_df_3 = df[df["状态"] == "已到马来西亚"].copy()
+    temp_df_4 = df[df["状态"] == "回国中"].copy()
+    temp_df_5 = df[df["状态"] == "收国际均摊中"].copy()
     temp_df_6 = df[df["状态"] == "日本仓库排发中"].copy()
-    temp_df_7 = df[df["状态"] == "收国际均摊中"].copy()
-    temp_df_8 = df[df["状态"] == "回国中"].copy()
-    temp_df_9 = df[df["状态"] == "已到马来西亚"].copy()
-    temp_df_10 = df[df["状态"] == "收国际中"].copy()
-    temp_df_11 = df[df["状态"] == "囤货"].copy()
-    temp_df_12 = df[df["状态"] == "已发货"].copy()
+    temp_df_7 = df[df["状态"] == "到库"].copy()
+    temp_df_8 = df[df["状态"] == "出荷准备中"].copy()
+    temp_df_9 = df[df["状态"] == "未出荷"].copy()
+    temp_df_10 = df[df["状态"] == "囤货"].copy()
+    temp_df_11 = df[df["状态"] == "已发货"].copy()
 
     ndf = pandas.concat(
         [
