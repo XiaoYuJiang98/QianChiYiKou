@@ -5,7 +5,7 @@ df = pandas.read_csv("https://raw.githubusercontent.com/XiaoYuJiang98/QianChiYiK
 
 streamlit.set_page_config(
     page_title="自主查询",
-    page_icon="🌟“，
+    page_icon="🌟",
     layout="wide",
 )
 
